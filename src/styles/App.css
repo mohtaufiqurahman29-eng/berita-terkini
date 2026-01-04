@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container utama */
+.news-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Judul halaman */
+.news-container h1 {
+  font-size: 2.2rem;
+  color: #212529;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Kartu berita */
+.news-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar berita */
+.news-card .card-img-top,
+.news-image {
+  height: 200px;
+  object-fit: cover;
+  background-color: #e9ecef;
+}
+
+/* Judul berita */
+.news-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Deskripsi berita */
+.news-card .card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.4;
+  min-height: 60px;
+}
+
+/* Tombol baca selengkapnya */
+.news-card .btn {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  background-color: #0d6efd;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.news-card .btn:hover {
+  background-color: #0b5ed7;
+}
+
+/* Responsif tambahan */
+@media (max-width: 576px) {
+  .news-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .news-card .card-text {
+    font-size: 0.85rem;
+  }
+}
