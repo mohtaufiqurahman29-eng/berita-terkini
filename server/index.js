@@ -1,15 +1,16 @@
 import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
+import dotenv from "dotenv";
 
+dotenv.config();
 const app = express();
 app.use(cors());
 
 app.get("/test", (req, res) => {
   res.json({ message: "SERVER OK" });
 });
-
-const API_KEY = "8c01b2d7583f44358e34f4341e52ebad";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 app.get("/api/news", async (req, res) => {
     const response = await fetch(

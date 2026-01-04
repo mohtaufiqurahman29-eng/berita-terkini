@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import NewsCard from "../components/NewsCard";
-import { fetchNews } from "../services/newsService";
+import { fetchNews } from "../services/newsServices";
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/App.css";
 
